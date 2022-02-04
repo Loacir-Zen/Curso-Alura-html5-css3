@@ -12,6 +12,10 @@ header {
   background: #bbbbbb;
 }
 
+.menu-nave {
+  display: inline-block;
+}
+
 .caixa {
   position: relative;
   width: 940px;

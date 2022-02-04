@@ -165,6 +165,11 @@ th {
 
   /* clear é para limpar o float no .utensilios*/
   clear: left;
+
+  /*
+  colocando opacidade na cor do elemento texto dos títulos
+  color: rgba(0, 0, 0, 0.8);
+  */
 }
 
 /*
@@ -255,6 +260,13 @@ p:first-line {
 
 .imagem-beneficios {
   width: 59%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 20px #000000;
+}
+
+.imagem-beneficios:hover {
+  opacity: 0.3;
 }
 
 .video {
@@ -262,4 +274,33 @@ p:first-line {
   /* para cima e para maixo com magem de 1em e automatico nas laterais
   deixando o conteúdo centralizado*/
   margin: 2em auto;
+}
+
+/*
+.principal p:not(#missao) {
+  background: orange;
+}
+*/
+
+@media screen and (max-width: 480px) {
+  .caixa,
+  .principal,
+  .conteudo-beneficios,
+  .mapa-conteudo,
+  .video {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .lista-beneficios,
+  .imagem-beneficios {
+    width: 100%;
+  }
 }
